@@ -1,21 +1,18 @@
-# working-timezone
+# vuejs-working-with-timezone
+Ejemplo en un proyecto en Vue, utilizando las zonas horarias con la libreria MomentJS
 
-> A Vue.js project
+En un proyecto de frontend debemos tomar en cuenta las distintas zonas horarias, nuestra página podría ser utilizado desde distintas partes del mundo, con distintas zonas horarias.
 
-## Build Setup
+* La primera consideración que debemos de tener, es el mantener las fechas de la base de datos en formato UTC
+* Una vez que nuestro backend nos retorna las fechas en este formato, nos apoyamos de la libreria MomentJS para ajustar la fecha y hora a la zona horaria del cliente
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+  En este proyecto hecho en Vue JS y webpack, he creado un filtro que convierte la fecha y hora a la zona horaria del navegador del cliente
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+# Instalacion
+```console
+$ git clone https://github.com/experttyce/vuejs-working-with-timezone.git
+$ cd vuejs-working-with-timezone
+$ npm install
+$ npm run dev
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
