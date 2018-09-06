@@ -6,9 +6,9 @@ En un proyecto de frontend debemos tomar en cuenta las distintas zonas horarias,
 * La primera consideración que debemos de tener, es el mantener las fechas de la base de datos en formato UTC
 * Una vez que nuestro backend nos retorna las fechas en este formato, nos apoyamos de la libreria MomentJS para ajustar la fecha y hora a la zona horaria del cliente
 
-<p>
+
   En este proyecto hecho en Vue JS y webpack, he creado un filtro que convierte la fecha y hora a la zona horaria del navegador del cliente
-</p>
+
 # Instalacion
 ```console
 $ git clone https://github.com/experttyce/vuejs-working-with-timezone.git
